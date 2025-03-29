@@ -1,0 +1,17 @@
+<div style="display: flex; height: 100vh;">
+  <!-- Sidebar remains visible -->
+  <div style="
+<!--  width: 500px;-->
+  height: 100%;">
+    <ag-grid-angular
+      style="width: 100%; height: 100%;"
+      [sideBar]="sideBar"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [autoGroupColumnDef]="autoGroupColumnDef"
+      [rowData]="rowData"
+      (gridReady)="onGridReady($event)"
+      [class.hidden]="!showGrid"
+    ></ag-grid-angular>
+  </div>
+</div>
